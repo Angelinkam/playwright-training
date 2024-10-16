@@ -1,0 +1,13 @@
+{
+
+    "clickOnProduct":"item-4-title-link",
+    "addToCart":"add-to-cart",
+    "clickOnCart":"shopping-cart-link",
+    "clickOnAZ": "product-sort-container",
+    "clickOnZA": "product-sort-container",
+    "clickOnLowPrice":"product-sort-container",
+    "clickOnHighPrice":"product-sort-container"
+
+
+
+}

@@ -5,11 +5,13 @@ import * as fs from 'fs';
 import {SauceDemoPage} from './saucedemo-page';
 
 
-const data = JSON.parse(fs.readFileSync('C:/Users/Angelina.Stamatoska/Desktop/playwright-training/tests/day2/users.json','utf-8'));
 
+
+const data = JSON.parse(fs.readFileSync('C:/Users/Angelina.Stamatoska/Desktop/playwright-training/tests/day2/users.json','utf-8'));
 const login = JSON.parse(fs.readFileSync('C:/Users/Angelina.Stamatoska/Desktop/playwright-training/tests/day2/login.json','utf-8'));
 
-test('test', async ({ page }) => {
+
+test('@fast test1',async ({ page }) => {
     await page.goto('/');
     await page.locator('.login_logo').click();
     console.log(data[0].username);
@@ -19,7 +21,7 @@ test('test', async ({ page }) => {
   
   });
   
-test(`Login test with page object modell`, async ({ page }) => {
+test(`@slow Login test with page object modell`,async ({ page }) => {
     const saucedemosaucedemoPage = new SauceDemoPage(page);
     await saucedemosaucedemoPage.goto();
     await saucedemosaucedemoPage.typeUsername(data[0].username);

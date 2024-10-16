@@ -19,5 +19,11 @@ test.describe("Test suite for authenticaiton tests", () =>{
   
       })
 
+      test('test2', async ({ page }) => {
+        await page.goto('https://qademo.com/select-menu');
     
+
+  
+      })
+
 })
