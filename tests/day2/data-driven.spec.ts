@@ -20,6 +20,14 @@ data.forEach((user) => {
     await expect(page.locator('[data-test="title"]')).toContainText("Products");
 });
 
+
+// test(`Login test ${user.username} ${user.password}`, async ({ page }) => {
+//   await page.goto('/');
+//   await page.locator(login.username).fill(user.username);
+//   await page.locator(login.password).fill(user.password);
+//   await page.locator(login.loginButton).click();
+//   await expect(page.locator('[data-test="title"]')).toContainText("Products");
+// });
 // test(`Login test with pom` async ({ page }) => {
 //   const saucedemosaucedemoPage = new SauceDemoPage(page);
 //   await page.goto('/');
